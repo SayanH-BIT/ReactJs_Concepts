@@ -17,3 +17,15 @@ const ExampleCarComponent = (props) => {
 }
 
 export default ExampleCarComponent
+
+
+/*
+    //Lets discuss here
+    1stly,
+    the "brand name" and the "carInfo" is written in the 'ExampleCarComponent' file which is called to main file -> 'App.js'
+
+    2ndly,
+    the "brand name" and "carInfo" are called as a props in 'ExampleCarName' and 'ExampleCarInfo' files accoringly as props functions
+
+    Thus, the values are accessed to those files using {props.brand} & {props.carInfo}
+*/
