@@ -7,7 +7,7 @@
 //props are passed as an object
 
 import React from 'react'
-import HeaderComp from './HeaderComp'
+import HeaderComp from './props_drilling/HeaderComp'
 
 const Props1 = () => {
     return (
