@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Parent from './hooks_concept/useContext_hook/Parent';
 import ExampleCarComponent from './props_concept/ExampleCarComponent';
 import Props1 from './props_concept/Props1';
 
@@ -12,6 +13,7 @@ function App() {
       <ExampleCarComponent/> */}
 
        {/* useContext() hook application */}
+       <Parent/>
     </div>
   );
 }
