@@ -6,6 +6,8 @@ const HeaderComp = (props) => {     //passing the props method through that func
     name : "Haldar" 
     [[Prototype]]: Object
     */
+    //props.name = "Sara";
+    //error => cannot assign to read-only property 
     return (
         <div>
             <h1> This is the header component. </h1>
