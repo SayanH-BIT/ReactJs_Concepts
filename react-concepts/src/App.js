@@ -1,13 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
-import IndexPage from './CRUD operation/IndexPage';
 /* import HookParent from './hooks_concept/useContext_hook/HookParent';
 import ExampleCarComponent from './props_concept/props_drilling/ExampleCarComponent';
 import Props1 from './props_concept/Props1';  */
-import ParentState from './state_concept/ParentState';
-import { Clock } from './state_concept/class_component/Clock';
-import UseState from './hooks_concept/useState_hook/UseState';
-import UseEffect from './hooks_concept/useEffect_hook/UseEffect';
+
+/* import ParentState from './state_concept/ParentState';
+import IndexPage from './CRUD operation/IndexPage';
+import { Clock } from './state_concept/class_component/Clock'; */
+
+/* import UseState from './hooks_concept/useState_hook/UseState';
+import UseEffect from './hooks_concept/useEffect_hook/UseEffect'; */
+import UseRef from './hooks_concept/useRef_hook/UseRef';
 
 function App() {
   return (
@@ -31,8 +34,9 @@ function App() {
       </div> */}
       {/* <div className='hook_concept'>
         <UseState/>
+        <UseEffect/>
       </div> */}
-      <UseEffect/>
+      <UseRef />
       {/* <Clock/> */}
       {/* <IndexPage/> */}
     </div>
