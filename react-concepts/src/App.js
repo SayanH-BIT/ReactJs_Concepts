@@ -16,9 +16,10 @@ import { Clock } from './state_concept/class_component/Clock';
 import UseState from './hooks_concept/useState_hook/UseState';
 import UseEffect from './hooks_concept/useEffect_hook/UseEffect'; 
 import UseRef from './hooks_concept/useRef_hook/UseRef';
+import UseMemo from './hooks_concept/useMemo_hook/UseMemo';
 */
 
-import UseMemo from './hooks_concept/useMemo_hook/UseMemo';
+import UseCallBack from './hooks_concept/useCallback_hook/UseCallBack';
 
 function App() {
   return (
@@ -44,8 +45,9 @@ function App() {
         <UseState/>
         <UseEffect/>
         <UseRef />
+        <UseMemo/>
       </div> */}
-      <UseMemo/>
+      <UseCallBack/>
       {/* <Clock/> */}
       {/* <IndexPage/> */}
     </div>
