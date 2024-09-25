@@ -1,16 +1,24 @@
 // import logo from './logo.svg';
 import './App.css';
-/* import HookParent from './hooks_concept/useContext_hook/HookParent';
+/* 
+import HookParent from './hooks_concept/useContext_hook/HookParent';
 import ExampleCarComponent from './props_concept/props_drilling/ExampleCarComponent';
-import Props1 from './props_concept/Props1';  */
+import Props1 from './props_concept/Props1';  
+*/
 
-/* import ParentState from './state_concept/ParentState';
+/* 
+import ParentState from './state_concept/ParentState';
 import IndexPage from './CRUD operation/IndexPage';
-import { Clock } from './state_concept/class_component/Clock'; */
+import { Clock } from './state_concept/class_component/Clock'; 
+*/
 
-/* import UseState from './hooks_concept/useState_hook/UseState';
-import UseEffect from './hooks_concept/useEffect_hook/UseEffect'; */
+/* 
+import UseState from './hooks_concept/useState_hook/UseState';
+import UseEffect from './hooks_concept/useEffect_hook/UseEffect'; 
 import UseRef from './hooks_concept/useRef_hook/UseRef';
+*/
+
+import UseMemo from './hooks_concept/useMemo_hook/UseMemo';
 
 function App() {
   return (
@@ -35,8 +43,9 @@ function App() {
       {/* <div className='hook_concept'>
         <UseState/>
         <UseEffect/>
+        <UseRef />
       </div> */}
-      <UseRef />
+      <UseMemo/>
       {/* <Clock/> */}
       {/* <IndexPage/> */}
     </div>
