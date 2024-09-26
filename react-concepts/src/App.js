@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import StateObj from './hooks_concept/useState_hook/StateObj';
 /* 
 import HookParent from './hooks_concept/useContext_hook/HookParent';
 import ExampleCarComponent from './props_concept/props_drilling/ExampleCarComponent';
@@ -17,10 +18,10 @@ import UseState from './hooks_concept/useState_hook/UseState';
 import UseEffect from './hooks_concept/useEffect_hook/UseEffect'; 
 import UseRef from './hooks_concept/useRef_hook/UseRef';
 import UseMemo from './hooks_concept/useMemo_hook/UseMemo';
+import UseCallBack from './hooks_concept/useCallback_hook/UseCallBack';
 */
 
-import UseCallBack from './hooks_concept/useCallback_hook/UseCallBack';
-import Map from './map_concept/Map';
+//import Map from './map_concept/Map';
 
 function App() {
   return (
@@ -49,7 +50,8 @@ function App() {
         <UseMemo/>
         <UseCallBack/>
       </div> */}
-      <Map/>
+      {/* <Map/> */}
+        <StateObj/>
       {/* <Clock/> */}
       {/* <IndexPage/> */}
     </div>
