@@ -20,6 +20,7 @@ import UseMemo from './hooks_concept/useMemo_hook/UseMemo';
 */
 
 import UseCallBack from './hooks_concept/useCallback_hook/UseCallBack';
+import Map from './map_concept/Map';
 
 function App() {
   return (
@@ -46,8 +47,9 @@ function App() {
         <UseEffect/>
         <UseRef />
         <UseMemo/>
+        <UseCallBack/>
       </div> */}
-      <UseCallBack/>
+      <Map/>
       {/* <Clock/> */}
       {/* <IndexPage/> */}
     </div>
