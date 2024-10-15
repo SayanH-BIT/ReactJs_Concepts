@@ -49,9 +49,9 @@ function App() {
         <UseRef />
         <UseMemo/>
         <UseCallBack/>
-      </div> */}
-      {/* <Map/> */}
+        </div> */}
         <StateObj/>
+      {/* <Map/> */}
       {/* <Clock/> */}
       {/* <IndexPage/> */}
     </div>
