@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import StateObj from './hooks_concept/useState_hook/StateObj';
+// import StateObj from './hooks_concept/useState_hook/StateObj';
+// import Counter from './redux_concept/Counter';
 /* 
 import HookParent from './hooks_concept/useContext_hook/HookParent';
 import ExampleCarComponent from './props_concept/props_drilling/ExampleCarComponent';
@@ -49,11 +50,12 @@ function App() {
         <UseRef />
         <UseMemo/>
         <UseCallBack/>
-        </div> */}
         <StateObj/>
+        </div> */}
       {/* <Map/> */}
       {/* <Clock/> */}
       {/* <IndexPage/> */}
+      {/* <Counter/> */}
     </div>
   );
 }
