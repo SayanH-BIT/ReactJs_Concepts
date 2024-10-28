@@ -1,5 +1,8 @@
 // import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './redux_concept/CRUD_redux/Home';
+import Create from './redux_concept/CRUD_redux/Create';
 // import StateObj from './hooks_concept/useState_hook/StateObj';
 // import Counter from './redux_concept/Counter';
 /* 
@@ -56,6 +59,10 @@ function App() {
       {/* <Clock/> */}
       {/* <IndexPage/> */}
       {/* <Counter/> */}
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/create' element={<Create/>}/>
+      </Routes>
     </div>
   );
 }
