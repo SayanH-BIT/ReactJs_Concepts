@@ -12,4 +12,4 @@
 //     })
 
 
-export const userAPI = 'https://jsonplaceholder.typicode.com/users'
+export const userAPI = 'http://localhost:5000/user'
