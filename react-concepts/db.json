@@ -1,57 +1,43 @@
 {
-    "user": [
-        {
-            "id": "a64fc5d7-32bf-42ce-8952-d347f10790b0",
-            "name": "Sayan haldar",
-            "username": "sayanHaldar",
-            "dob": "2024-10-17",
-            "mobile": "+91-9458758662",
-            "email": "haldar@gmail.com"
-        },
-        {
-            "id": "0095be68-2ba1-4a60-b33a-91e3055ba26a",
-            "name": "Manas Das",
-            "username": "manas123",
-            "dob": "2002-09-05",
-            "mobile": "9874654025",
-            "email": "manas@gmail.com"
-        },
-        {
-            "id": "a3604c77-f410-47bb-bb32-ee7761525d7c",
-            "name": "Subhasish",
-            "username": "subhasishsamanta",
-            "dob": "2002-03-05",
-            "mobile": "919855966545",
-            "email": "sayanhaldar@gmail.com"
-        },
-        {
-            "id": "b262d8a7-7e49-4429-a902-b78b4a38e836",
-            "name": "Isika Maiti",
-            "username": "isika@maiti",
-            "dob": "2003-11-09",
-            "mobile": "919856325478",
-            "email": "isika@bit.com"
-        },
-        {
-            "id": "d272",
-            "name": "Sayan haldar",
-            "username": "sayanHalda",
-            "email": "haldar@gmail.com"
-        }
-    ],
-    "comments": [
-        {
-            "id": "1",
-            "text": "a comment about post 1",
-            "postId": "1"
-        },
-        {
-            "id": "2",
-            "text": "another comment about post 1",
-            "postId": "1"
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "user": [
+    {
+      "id": "a64fc5d7-32bf-42ce-8952-d347f10790b0",
+      "name": "Sayan haldar",
+      "username":"sayanhaldar123",
+      "email": "haldar@gmail.com"
+    },
+    {
+      "id": "0095be68-2ba1-4a60-b33a-91e3055ba26a",
+      "name": "Manas Das",
+      "username":"manasDas",
+      "email": "manas@gmail.com"
+    },
+    {
+      "id": "a3604c77-f410-47bb-bb32-ee7761525d7c",
+      "name": "Subhasish",
+      "username":"subhasish@2001",
+      "email": "samanta@gmail.com"
+    },
+    {
+      "id": "b262d8a7-7e49-4429-a902-b78b4a38e836",
+      "name": "Isika Maiti",
+      "username":"isika@maiti",
+      "email": "isika@bit.com"
     }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

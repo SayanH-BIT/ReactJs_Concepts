@@ -9,12 +9,12 @@ const userSlice = createSlice({
             console.log('action -> ', action);
         },
         updateUser: (state, action) => {
-            const uu = state.find(user => user.id === id)
-            const { id, name, username, email } = action.payload
-            if (uu) {
-                uu.name = name;
-                uu.username = username;
-                uu.email = email
+            const { id, name, username, email } = action.payload;
+            const user = state.find(user => user.id === id);
+            if (user) {
+                user.name = name;
+                user.username = username;
+                user.email = email;
             }
         },
         deleteUser: (state, action) => {

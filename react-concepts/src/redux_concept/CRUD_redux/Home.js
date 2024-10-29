@@ -4,6 +4,7 @@ import axios from 'axios'
 import { userAPI } from './API'
 import { Link, useNavigate } from 'react-router-dom'
 import { deleteUser } from './UserReducer'
+import { toast, ToastContainer } from 'react-toastify'
 const Home = () => {
     const navigate = useNavigate()
     const [userData, setUser] = useState([])
@@ -20,12 +21,22 @@ const Home = () => {
 
             })
     }, [])
-    const handleDlt = (id) => {
-        dispatch(deleteUser({id:id}))
+    const handleDlt = async (id) => {
+        try {
+            // Delete from the API
+            await axios.delete(userAPI+`/${id}`);
+            // Dispatch the delete action to Redux store
+            dispatch(deleteUser({ id }));
+            toast.danger(`User with id ${id} deleted successfully.`);
+        } 
+        catch (error) {
+            console.error("Error deleting user: ", error);
+        }
     }
 
     return (
         <div>
+        <ToastContainer/>
             <h1> CRUD operation with react-redux</h1>
             <Link to='/create' className='btn btn-primary my-3'>Create +</Link>
             <table className="table table-data table-striped table-bordered">
@@ -45,10 +56,9 @@ const Home = () => {
                             <th scope="col">{user.name}</th>
                             <th scope="col">{user.username}</th>
                             <th scope="col">{user.email}</th>
-                            <th scope="col" style={{ display: "flex", gap: "10px", alignItems:"center", justifyContent:"center" }}>
-                                <button className='btn btn-success' onClick={()=>{navigate(`/view`)}}>View</button>
-                                <button className='btn btn-warning' onClick={()=>{navigate(`/edit/${user.id}`)}}>Edit</button>
-                                <button className='btn btn-danger' style={{marginRight:"-15px"}} onClick={handleDlt(user.id)}>Delete</button>
+                            <th scope="col" style={{ display: "flex", gap: "10px", alignItems: "center", justifyContent: "center" }}>
+                                <button className='btn btn-warning' onClick={() => { navigate(`/edit/${user.id}`) }}>Edit</button>
+                                <button className='btn btn-danger' style={{ marginRight: "-15px" }} onClick={handleDlt}>Delete</button>
                             </th>
                         </tr>
                     )}

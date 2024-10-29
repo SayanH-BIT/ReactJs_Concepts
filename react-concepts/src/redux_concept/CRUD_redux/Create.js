@@ -11,7 +11,7 @@ const Create = () => {
     const users = useSelector((state) => state.user)
     const handleSubmit = (event) => {
         event.preventDefault()
-        const newUserId = users[users.length - 1].id + 1;
+        const newUserId = users.length > 0 ? users[users.length - 1].id + 1 : '';
         dispatch(addUser({ id: newUserId, name, username, email }));
         navigate('/')
     }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 import { userAPI } from './API'
@@ -9,7 +9,6 @@ import { updateUser } from './UserReducer'
 
 const Edit = () => {
     const { id } = useParams()
-    // const users = useSelector((state) => state.users)
     const [update, setUpdate] = useState({
         name: '',
         username: '',
@@ -27,21 +26,29 @@ const Edit = () => {
                 'email': values.email
             };
             try {
-                await axios.post(userAPI + `/${id}`, formData)
+                // Use PUT for updating an existing record
+                await axios.put(`${userAPI}/${id}`, formData)
+
+                // Dispatch to update Redux store after successful API update
+                dispatch(updateUser({
+                    id: id,
+                    name: values.name,
+                    username: values.username,
+                    email: values.email
+                }))
+
+                // Navigate after updating API and Redux store
+                toast.success("Saved successfully", {
+                    onClose: () => navigate('/')
+                })
             } catch (error) {
                 console.log("Error occurred: ", error);
             }
-            dispatch(updateUser({
-                id: id,
-                name: values.name,
-                username: values.username,
-                email: values.email
-            }))
         }
     })
 
     useEffect(() => {
-        axios.get(userAPI + `/${id}`)
+        axios.get(`${userAPI}/${id}`)
             .then((res) => {
                 console.log("Fetched profile: ", res.data);
                 setUpdate(res.data);  // Set fetched data into the state
@@ -50,6 +57,7 @@ const Edit = () => {
                 console.log("Error fetching profile: ", error);
             });
     }, [id])
+
     return (
         <div>
             <ToastContainer />
@@ -69,13 +77,8 @@ const Edit = () => {
                 </div>
                 <br />
                 <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
-                    <button type='button' className='btn btn-info' onClick={() => { setTimeout(() => navigate('/'), 1000) }}> Back</button>
-                    <button type='submit' className='btn btn-warning' onClick={() => {
-                        toast.success("Saved successfully", {
-                            // setTimeout(() => navigate('/'), 1500)
-                            onClose: () => navigate('/')
-                        })
-                    }}>Save</button>
+                    <button type='button' className='btn btn-info' onClick={() => { navigate('/') }}> Back</button>
+                    <button type='submit' className='btn btn-warning'>Save</button>
                 </div>
             </form>
         </div>
