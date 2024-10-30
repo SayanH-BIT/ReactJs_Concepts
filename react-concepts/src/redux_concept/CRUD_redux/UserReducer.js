@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const userSlice = createSlice({
-    name: "users",
-    initialState: [],
+    name: "user",
+    initialState: [],       //setting initial state as an empty array
     reducers: {
         addUser: (state, action) => {
             state.push(action.payload)

@@ -37,7 +37,66 @@
       "postId": "1"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "profile": [
+    {
+      "name": "sayanhaldar",
+      "email": "sayan@gmail.com",
+      "designation": "react dev",
+      "company": "Brainium",
+      "contact": "744896555",
+      "website": "https://www.sh.com/",
+      "id": "bb05677c-2d72-4c87-ad3f-984a987050b8"
+    },
+    {
+      "id": "a200ba87-ce8b-4118-94c1-0b013b404466",
+      "name": "manas das",
+      "email": "manas@gmail.com",
+      "designation": "software",
+      "company": "Technical",
+      "contact": "6258987821",
+      "linkedin": "https://www.abcd.linkedin.com/",
+      "address": "formData.nameformData.nameformData.nameformData.name",
+      "check": false
+    },
+    {
+      "id": "71eb0ab5-758a-41dd-968e-e65f3ef8f313",
+      "name": "isika",
+      "email": "isika@bit.com",
+      "designation": "engineer",
+      "company": "Brainium",
+      "contact": "6854859324",
+      "linkedin": "https://www.abcd.linkedin.com/",
+      "address": "If you want to share the login credentials globally across your application (e.g., between multiple pages)",
+      "check": false
+    },
+    {
+      "id": "1ced1486-a12c-49a3-9363-dab6e16d8b3d",
+      "name": "subhasish",
+      "email": "subha@bit.com",
+      "designation": "analyst",
+      "company": "Brainium",
+      "contact": "7448965210",
+      "linkedin": "https://www.subha.linkedin.com/",
+      "address": "👋 Hey! Using React, Vue or Astro? Check my new project MistCSS to write 50% less code.",
+      "check": false
+    },
+    {
+      "id": "1d7654c1-cfb5-4fb4-a174-2835cf3563ec",
+      "name": "sovan",
+      "email": "sovan@bit.co.in",
+      "designation": "php dev",
+      "company": "Brainium",
+      "contact": "7985103465",
+      "website": "https://www.sovan.linkedin.com/"
+    },
+    {
+      "id": "38ff27aa-1437-4c11-ab7e-e67b1b10a1a7",
+      "name": "Leanne Graham",
+      "email": "licob89476@segichen.com",
+      "designation": "manager",
+      "company": "BIT",
+      "contact": "7985114870",
+      "website": "https://www.grahamL.linkedin.com/"
+    }
+  ]
 }

@@ -5,6 +5,7 @@ import Home from './redux_concept/CRUD_redux/Home';
 import Create from './redux_concept/CRUD_redux/Create';
 import Edit from './redux_concept/CRUD_redux/Edit';
 import 'react-toastify/dist/ReactToastify.css';
+// import TableData from './CRUD operation/TableData';
 // import StateObj from './hooks_concept/useState_hook/StateObj';
 // import Counter from './redux_concept/Counter';
 /* 
@@ -66,6 +67,7 @@ function App() {
         <Route path='/create' element={<Create />} />
         <Route path='/edit/:id' element={<Edit />} />
       </Routes>
+      {/* <TableData/> */}
     </div>
   );
 }

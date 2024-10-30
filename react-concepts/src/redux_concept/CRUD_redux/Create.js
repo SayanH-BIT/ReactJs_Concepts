@@ -8,10 +8,10 @@ const Create = () => {
     const [name, setName] = useState()
     const [username, setUserName] = useState()
     const [email, setEmail] = useState()
-    const users = useSelector((state) => state.user)
+    const users = useSelector((state) => state.user || []);
     const handleSubmit = (event) => {
         event.preventDefault()
-        const newUserId = users.length > 0 ? users[users.length - 1].id + 1 : '';
+        const newUserId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
         dispatch(addUser({ id: newUserId, name, username, email }));
         navigate('/')
     }
