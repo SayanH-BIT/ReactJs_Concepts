@@ -12,5 +12,5 @@
 //     })
 
 
-export const userAPI = 'http://localhost:5000/user'
-export const profileAPI = 'http://localhost:6000/profile'
+export const userAPI = 'http://localhost:5002/user'
+export const profileAPI = 'http://localhost:5002/profile'
